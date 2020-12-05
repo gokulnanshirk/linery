@@ -1,0 +1,7 @@
+{
+  "name": "linery",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
