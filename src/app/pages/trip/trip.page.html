@@ -1,0 +1,51 @@
+<ion-toolbar>
+  <ion-searchbar style="padding-top:10px;" [placeholder]="searchbarPlaceholder" animated mode="ios"></ion-searchbar>
+  <!-- <ion-title>{{title}}</ion-title> -->
+  <ion-icon size="large" slot="end" name="options-outline" (click)="openSettings($event)"></ion-icon>
+</ion-toolbar>
+
+<ion-content>
+  <ion-button (click)="pay()">PAY</ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg='4' size-md="4" sm-size="4" size-xs="12" *ngFor="let i of list">
+        <ion-card (click)="viewTrip(i)">
+          <ion-card-header>
+            <ion-grid style="padding: 0;">
+              <ion-row>
+                <ion-col>
+                  <ion-card-subtitle>
+                    <ion-icon name="trail-sign-outline"></ion-icon>
+                    <ion-label style="margin-left: 10px;">
+                      {{i.fromLocation}} - {{i.toLocation}}
+                    </ion-label>
+                  </ion-card-subtitle>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-card-subtitle>
+                    <ion-icon name="cube-outline"></ion-icon>
+                    <ion-label style="margin-left: 10px;">
+                      {{i.loadItem}}
+                    </ion-label>
+                  </ion-card-subtitle>
+                </ion-col>
+                <ion-col>
+                  <ion-card-subtitle style="float: right;font-size: smaller;">{{getFormattedDate(i.date)}}
+                  </ion-card-subtitle>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="tripForm()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

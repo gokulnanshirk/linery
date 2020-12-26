@@ -1,0 +1,16 @@
+<ion-list>
+  <ion-item>
+    <ion-icon size="small" name="call-outline" slot="start"></ion-icon>
+    <ion-label>7010127181</ion-label>
+  </ion-item>
+  <ion-item (click)="changeLanguage()">
+    <ion-icon size="small" name="text-outline" slot="start"></ion-icon>
+    <ion-label>{{selectedLanguage}}</ion-label>
+  </ion-item>
+  <div style="text-align: center;">
+    <ion-button size="small" style="margin: 15px;">
+      {{logoutText}}
+      <ion-icon style="margin-left: 10px;" name="log-out-outline" size="small"></ion-icon>
+    </ion-button>
+  </div>
+</ion-list>

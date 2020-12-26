@@ -1,0 +1,174 @@
+<ion-toolbar>
+  <ion-title>{{trip.fromLocation}} - {{trip.toLocation}}</ion-title>
+  <ion-icon (click)="dismiss()" slot="end" name="chevron-down-outline"></ion-icon>
+</ion-toolbar>
+<ion-content>
+
+  <ion-card-header>
+    <ion-card-subtitle>
+      <u></u>{{labels.generalInfo}}
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.driver}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.driverName}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="cube-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.loadItem}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.loadItem}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.date}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{getFormattedDate(trip.date)}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.fromLocation}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.fromLocation}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.toLocation}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.toLocation}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="wallet-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.rent}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.rent}}</ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+  <ion-card-header style="padding-top: 0;">
+    <ion-card-subtitle>
+      <u></u>{{labels.vehicleInfo}}
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="train-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.vehicleRegNo}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.vehicleRegNo}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="timer-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.startKm}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.startKm}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="timer-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.endKm}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.endKm}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="cube-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.ton}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.ton}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="battery-half-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.totalFuel}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.totalFuel}}</ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+
+  <ion-card-header style="padding-top: 0;">
+    <ion-card-subtitle>
+      <u></u>{{labels.expenseInfo}}
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="timer-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.comission}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.comission}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="timer-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.loadingCharge}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.loadingCharge}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="cube-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.unloadingCharge}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.unloadingCharge}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="battery-half-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="5">{{labels.totalFuel}}</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col>{{trip.totalFuel}}</ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card-content>
+
+</ion-content>

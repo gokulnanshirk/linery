@@ -1,0 +1,51 @@
+{
+  "hello": "வணக்கம்",
+  "newTrip": "புதிய பயணம்",
+  "noTripAvailable": "பயணங்கள் காணப்படவில்லை",
+  "tripPage": {
+    "placeholder": "தேடல்"
+  },
+  "settings": {
+    "logout": "வெளியேறு",
+    "language": "தமிழ்"
+  },
+  "tripForm": {
+    "title": "புதிய பயணம்",
+    "vehicleRegNo": "வண்டி என்",
+    "driverName": "டிரைவர் பெயர்",
+    "date": "தேதி",
+    "fromLocation": "புறப்படும் இடம்",
+    "toLocation": "சேரும் இடம்",
+    "loadItem": "லோடு",
+    "ton": "எடை / டன்",
+    "rent": "வாடகை",
+    "comission": "கமிஷன்",
+    "loadingCharge": "ஏற்றுக் கூலி",
+    "unloadingCharge": "இறக்கு கூலி",
+    "startKm": "அரம்ப கி.மீ",
+    "endKm": "முடியும் கி.மீ",
+    "totalFuel": "மொத்த டீசல்",
+    "mielage": "மைலேஜ்",
+    "save": "பதிவு செய்"
+  },
+  "tripDetail": {
+    "generalInfo": "பொதுவானத் தகவல்",
+    "driver": "டிரைவர்",
+    "vehicleInfo": "வாகனத் தகவல்",
+    "expenseInfo": "செலவுத் தகவல்",
+    "vehicleRegNo": "வண்டி என்",
+    "loadItem": "லோடு",
+    "date": "தேதி",
+    "rent": "வாடகை",
+    "startKm": "அரம்ப கி.மீ",
+    "endKm": "முடியும் கி.மீ",
+    "totalFuel": "மொத்த டீசல்",
+    "mielage": "மைலேஜ்",
+    "ton": "எடை / டன்",
+    "fromLocation": "புறப்படும் இடம்",
+    "toLocation": "சேரும் இடம்",
+    "comission": "கமிஷன்",
+    "loadingCharge": "ஏற்றுக் கூலி",
+    "unloadingCharge": "இறக்கு கூலி"
+  }
+}

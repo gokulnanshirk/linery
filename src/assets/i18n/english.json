@@ -1,0 +1,51 @@
+{
+  "hello": "Hello",
+  "newTrip": "New Trip",
+  "noTripAvailable": "No Trip Found",
+  "tripPage": {
+    "placeholder": "Search"
+  },
+  "settings": {
+    "logout": "Logout",
+    "language": "English"
+  },
+  "tripForm": {
+    "title": "New Trip",
+    "vehicleRegNo": "Vehicle No",
+    "driverName": "Driver Name",
+    "date": "Date",
+    "fromLocation": "From Location",
+    "toLocation": "To Location",
+    "loadItem": "Load Item",
+    "ton": "Ton",
+    "rent": "Rent",
+    "comission": "Comission",
+    "loadingCharge": "Loading Charge",
+    "unloadingCharge": "Unloading Charge",
+    "startKm": "Start KM",
+    "endKm": "End KM",
+    "totalFuel": "Total Diesel",
+    "mielage": "Mielage",
+    "save":"Save"
+  },
+  "tripDetail": {
+    "generalInfo": "General Info",
+    "driver": "Driver",
+    "vehicleInfo": "Vehicle Info",
+    "expenseInfo": "Expense Info",
+    "vehicleRegNo": "Vehicle No",
+    "loadItem": "Load",
+    "date": "Date",
+    "rent": "Rent",
+    "startKm": "Start KM",
+    "endKm": "End Km",
+    "totalFuel": "Total Diesel",
+    "mielage": "Mielage",
+    "ton": "Ton",
+    "fromLocation": "From",
+    "toLocation": "To",
+    "comission": "Comission",
+    "loadingCharge": "Loading Charge",
+    "unloadingCharge": "Unloading Charge"
+  }
+}

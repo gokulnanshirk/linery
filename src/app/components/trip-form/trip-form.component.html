@@ -1,0 +1,71 @@
+<ion-toolbar>
+  <ion-title>{{labels.title}}</ion-title>
+  <ion-icon (click)="dismiss()" slot="end" name="chevron-down-outline"></ion-icon>
+</ion-toolbar>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">{{labels.date}}</ion-label>
+      <ion-datetime displayFormat="DD-MM-YYYY" pickerFormat="DD MM YY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.vehicleRegNo}}</ion-label>
+      <ion-input autocapitalize autofocus="true" type="text" [(ngModel)]="vehicleRegNo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.driverName}}</ion-label>
+      <ion-input type="text" [(ngModel)]="driverName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.fromLocation}}</ion-label>
+      <ion-input type="text" [(ngModel)]="fromLocation"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.toLocation}}</ion-label>
+      <ion-input type="text" [(ngModel)]="toLocation"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.loadItem}}</ion-label>
+      <ion-input type="text" [(ngModel)]="loadItem"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.ton}}</ion-label>
+      <ion-input type="number" [(ngModel)]="ton"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.rent}}</ion-label>
+      <ion-input type="number" [(ngModel)]="rent"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.comission}}</ion-label>
+      <ion-input type="number" [(ngModel)]="comission"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.loadingCharge}}</ion-label>
+      <ion-input type="number" [(ngModel)]="loadingCharge"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.unloadingCharge}}</ion-label>
+      <ion-input type="number" [(ngModel)]="unloadingCharge"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.startKm}}</ion-label>
+      <ion-input type="number" [(ngModel)]="startKm"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.endKm}}</ion-label>
+      <ion-input type="number" [(ngModel)]="endKm"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.totalFuel}}</ion-label>
+      <ion-input type="number" [(ngModel)]="totalFuel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{labels.mielage}}</ion-label>
+      <ion-input type="number" [(ngModel)]="mielage"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+<ion-button (click)="save()">{{labels.save}}</ion-button>
