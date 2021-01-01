@@ -1,7 +1,6 @@
 pipeline {
    agent any
       environment {
-         jenkins    ALL = NOPASSWD: /path/to/script
          PATH='/usr/local/bin:/usr/bin:/bin'
       }
    stages {
