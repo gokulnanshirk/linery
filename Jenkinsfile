@@ -13,6 +13,7 @@ pipeline {
       stage('Add Android Platform') {
    steps {
       sh 'sudo ionic cordova platform add android'
+      sh 'qwerty'
    }
   }
 
