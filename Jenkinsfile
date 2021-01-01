@@ -12,14 +12,14 @@ pipeline {
       
       stage('Add Android Platform') {
    steps {
-      sh 'sudo ionic cordova platform add android'
+      sh 'ionic cordova platform add android'
       sh 'qwerty'
    }
   }
 
    stage('Android Build') {
    steps {
-      sh 'sudo ionic cordova build android --prod --release'
+      sh 'ionic cordova build android --prod --release'
    }
   }
 
