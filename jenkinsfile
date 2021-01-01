@@ -1,0 +1,26 @@
+pipeline {
+   agent any
+      environment {
+         PATH='/usr/local/bin:/usr/bin:/bin'
+      }
+   stages {
+      stage('NPM Setup') {
+      steps {
+         sh 'npm install'
+      }
+   }
+
+   stage('Android Build') {
+   steps {
+      sh 'ionic cordova build android --prod --release'
+   }
+  }
+
+   stage('APK Sign') {
+   steps {
+      sh 'jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore /Users/gokulkrishnan/Downloads/my-release-key.keystore  /Users/gokulkrishnan/Documents/dev/jobmate_standard_ionic/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk  alias_name'
+   }
+   }
+
+ }
+}
