@@ -12,7 +12,7 @@ pipeline {
       
    stage('Android Build') {
    steps {
-      sh 'ionic cordova build android --prod --release'
+      sh 'sudo ionic cordova build android --prod --release'
    }
   }
 
